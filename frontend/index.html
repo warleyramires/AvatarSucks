@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Sucks</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Sistema AvatarSucks</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#insert">Inserir Cientista</a></li>
+            <li><a href="#list">Listar Cientistas</a></li>
+            <li><a href="#update">Atualizar Cientista</a></li>
+            <li><a href="#delete">Remover Cientista</a></li>
+        </ul>
+    </nav>
+
+    <section id="insert">
+        <h2>Inserir Cientista</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Data de Nascimento:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="foreignKey">Selecione a chave estrangeira:</label>
+            <select id="foreignKey" name="foreignKey">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+            </select>
+
+            <button type="submit">Inserir</button>
+        </form>
+    </section>
+
+    <section id="list">
+        <h2>Listar Cientistas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Data de Nascimento</th>
+                    <th>Chave Estrangeira</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>joao@exemplo.com</td>
+                    <td>1990-05-20</td>
+                    <td>Opção 1</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <section id="update">
+        <h2>Atualizar Cientista</h2>
+        <form>
+            <label for="id">ID do registro:</label>
+            <input type="text" id="id" name="id" required>
+
+            <label for="name">Novo Nome:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Novo E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <button type="submit">Atualizar</button>
+        </form>
+    </section>
+
+    <section id="delete">
+        <h2>Remover Cientista</h2>
+        <form>
+            <label for="deleteId">ID do registro a remover:</label>
+            <input type="text" id="deleteId" name="deleteId" required>
+
+            <button type="submit">Remover</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a target="_blank" href="https://github.com/warleyramires">Warley Ramires</a> & <a href="https://github.com/rick1135/rick1135" target="_blank">Alberto Henrique</a></p>
+    </footer>
+    
+</body>
+</html>
